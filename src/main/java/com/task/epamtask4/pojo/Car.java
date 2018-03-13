@@ -2,7 +2,7 @@ package com.task.epamtask4.pojo;
 
 public class Car {
     private long id;
-    private String carMark;
+    private String brand;
     private String model;
     private int year;
     private String color;
@@ -17,12 +17,12 @@ public class Car {
         this.id = id;
     }
 
-    public String getCarMark() {
-        return carMark;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setCarMark(String carMark) {
-        this.carMark = carMark;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
