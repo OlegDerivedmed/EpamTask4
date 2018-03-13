@@ -9,6 +9,29 @@ public class Car {
     private int price;
     private String number;
 
+    public Car(long id, String brand, String model, int year, String color, int price, String number) {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.price = price;
+        this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                ", number='" + number + '\'' +
+                '}';
+    }
+
     public long getId() {
         return id;
     }

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Task4Util {
 
-    public Car[] carsByBrand(String brand, Car[] cars) {
+    public static Car[] carsByBrand(String brand, Car[] cars) {
         List<Car> result = new LinkedList<Car>();
 
         for (Car car :
@@ -18,7 +18,7 @@ public class Task4Util {
         return result.toArray(new Car[result.size()]);
     }
 
-    public Car[] carsByModelAndRunAge(String carModel, int years, Car[] cars) {
+    public static Car[] carsByModelAndRunAge(String carModel, int years, Car[] cars) {
         List<Car> result = new LinkedList<Car>();
         int currentyear = Calendar.YEAR;
 
@@ -31,7 +31,7 @@ public class Task4Util {
         return result.toArray(new Car[result.size()]);
     }
 
-    public Car[] carByYearAndPrice(int year, int price, Car[] cars) {
+    public static Car[] carByYearAndPrice(int year, int price, Car[] cars) {
         List<Car> result = new LinkedList<Car>();
 
         for (Car car :
