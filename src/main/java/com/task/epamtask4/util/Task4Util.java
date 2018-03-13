@@ -20,11 +20,13 @@ public class Task4Util {
 
     public static Car[] carsByModelAndRunAge(String carModel, int years, Car[] cars) {
         List<Car> result = new LinkedList<Car>();
-        int currentyear = Calendar.YEAR;
-
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        int currentyear = calendar.get(Calendar.YEAR);
+        System.out.println(currentyear);
         for (Car car :
                 cars) {
-            if (carModel.equals(car.getModel()) && (currentyear - car.getYear() == years)) {
+            if (carModel.equals(car.getModel()) && (currentyear - car.getYear() > years)) {
                 result.add(car);
             }
         }
